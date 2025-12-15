@@ -1,4 +1,74 @@
+body {
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+    margin: 0;
+}
 
-h1,p {
+h1, h2, h3, a, button, p {
     font-family: "Geom", sans-serif;
+}
+
+p, button, a {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: greenyellow;
+    color: black;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: chartreuse;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section {
+    max-width: 70vw;
+    padding: 40px;
+}
+
+header>section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+header>section div {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    position: absolute;
+    color: greenyellow;
+}
+
+#header-image {
+    max-height: 800px;
+    width: auto;
+}
+
+.card-big {
+    padding: 20px;
+    background-color: white;
+}
+
+.button-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
