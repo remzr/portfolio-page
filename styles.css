@@ -35,12 +35,12 @@ header {
 
 section {
     max-width: 70vw;
-    padding: 40px;
+    padding: 20px;
 }
 
 header>section {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     justify-content: center;
     align-items: center;
 }
@@ -51,20 +51,32 @@ header>section div {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.4rem;
     font-weight: 800;
     position: absolute;
     color: greenyellow;
+    left: 20%;
+    top: 20%;
 }
 
 #header-image {
     max-height: 800px;
-    width: auto;
+    aspect-ratio: auto;
+    border-radius: 50px 4px 4px 4px;
+}
+
+#header-image+.caption {
+    color: white;
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+    font-size: 0.9rem;
 }
 
 .card-big {
     padding: 20px;
     background-color: white;
+    border-radius: 4px 4px 50px 4px;
 }
 
 .button-bar {
