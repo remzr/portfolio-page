@@ -35,7 +35,7 @@ header {
 }
 
 section {
-    max-width: 70vw;
+    max-width: 80vw;
     padding: 20px;
 }
 
@@ -58,6 +58,12 @@ h1 {
     color: greenyellow;
     left: 20%;
     top: 20%;
+}
+
+main>h2 {
+    text-align: center;
+    font-size: 5rem;
+    color: greenyellow;
 }
 
 #header-image {
@@ -95,6 +101,41 @@ main {
 
 main>section {
     rotate: 3deg;
-        overflow: hidden;
-        margin-left: 200px;
+    overflow: hidden;
+    margin-left: 200px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    width: 1fr;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 4px;
+    background-color: rgb(233, 233, 233);
+
+}
+
+.project-card>.image-container {
+    max-height: 200px;
+    aspect-ratio: auto;
+    overflow: hidden;
+}
+
+.image-container>img {
+    width: 100%;
+    border-radius: 4px 4px 4px 0px;
+}
+
+.card-text {
+    margin: 16px;
+}
+
+.card-text>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
