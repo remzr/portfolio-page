@@ -60,16 +60,23 @@ h1 {
     top: 20%;
 }
 
-main>h2 {
+main>div {
+width: 100%;
+}
+
+main>div>h2 {
     text-align: center;
     font-size: 5rem;
     color: greenyellow;
+    text-align: right;
+    margin: unset;
 }
 
 #header-image {
     max-height: 800px;
     aspect-ratio: auto;
     border-radius: 50px 4px 4px 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 #header-image+.caption {
@@ -95,14 +102,16 @@ main>h2 {
 main {
     background-color: white;
     rotate: -3deg;
-    width: 200%;
-    margin-left: -200px;
+    box-shadow: 0px 0px 0px 40px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main>section {
     rotate: 3deg;
     overflow: hidden;
-    margin-left: 200px;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
